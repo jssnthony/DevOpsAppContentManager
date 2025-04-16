@@ -63,3 +63,8 @@ output/public/
 /DevOpsAppContentManager/.vs/DevOpsAppContentManager/FileContentIndex/86dd0f76-9296-438a-8be2-a082fd85df52.vsidx
 /DevOpsAppContentManager/.vs/DevOpsAppContentManager/v17/DocumentLayout.json
 /DevOpsAppContentManager/devopsappcontentmanager/.vscode/extensions.json
+*.vsidx
+/DevOpsAppContentManager/.vs/DevOpsAppContentManager/v17/DocumentLayout.backup.json
+*.cache
+*.txt
+*.props
