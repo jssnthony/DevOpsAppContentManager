@@ -68,3 +68,4 @@ output/public/
 *.cache
 *.txt
 *.props
+/DevOpsAppContentManager/devopsappcontentmanager/devopsappcontentmanager.esproj.user
