@@ -1,15 +1,15 @@
 <template>
   <header :class="['header', { dark: isDarkMode }]">
     <div class="left">
-      <img src="@/assets/logo.svg" alt="Logo" class="logo" />
+      <p class="font-200">VicHub</p>
     </div>
     <div class="center">
       <input type="text" placeholder="Buscar..." class="search" />
     </div>
     <div class="right">
-      <button @click="toggleDarkMode" class="toggle-button">
-        {{ isDarkMode ? '☀️' : '🌙' }}
-      </button>
+      <a @click="toggleDarkMode" class="toggle-button">
+        {{ isDarkMode ? 'Light' : 'Dark' }}
+      </a>
     </div>
   </header>
 </template>
