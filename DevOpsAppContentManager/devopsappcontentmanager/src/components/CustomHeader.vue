@@ -11,6 +11,8 @@
         {{ isDarkMode ? 'Light' : 'Dark' }}
       </a>
     </div>
+    <input type="text" v-model="msg" />
+    <h1 class="green">{{ msg }}</h1>
   </header>
 </template>
 
