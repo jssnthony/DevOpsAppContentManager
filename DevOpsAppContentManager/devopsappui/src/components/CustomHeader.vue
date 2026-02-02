@@ -22,8 +22,7 @@ import { ref, watch } from 'vue'
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 1rem;
-    background: #ffffff;
-    color: #000;
+    color: #fff;
     transition: background 0.3s, color 0.3s;
     flex-wrap: wrap;
   }
@@ -58,10 +57,6 @@ import { ref, watch } from 'vue'
       flex-direction: column;
       align-items: stretch;
       text-align: center;
-    }
-
-    .center {
-      margin: 0.5rem 0;
     }
 
     .left, .right {

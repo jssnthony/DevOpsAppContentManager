@@ -1,7 +1,6 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
   margin: 0 auto;
   font-weight: normal;
 }
@@ -22,13 +21,13 @@ a,
 
 @media (min-width: 1024px) {
   body {
-    display: flex;
-    place-items: center;
+    display: block; /* deja de centrar todo */
+    place-items: unset; /* por si se queda */
   }
 
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    margin: 0 auto;
+    display: block; /* deja de ser grid */
+    padding: 0 2rem; /* opcional */
   }
 }
