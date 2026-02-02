@@ -69,3 +69,11 @@ output/public/
 *.txt
 *.props
 /DevOpsAppContentManager/devopsappcontentmanager/devopsappcontentmanager.esproj.user
+/DevOpsAppContentManager/.vs/DevOpsAppContentManager/v18/DocumentLayout.backup.json
+/DevOpsAppContentManager/.vs/DevOpsAppContentManager/v18/DocumentLayout.json
+/DevOpsAppContentManager/.vs/DevOpsAppContentManager/CopilotIndices/18.0.988.22099/CodeChunks.db
+/DevOpsAppContentManager/.vs/DevOpsAppContentManager/CopilotIndices/18.0.988.22099/CodeChunks.db-shm
+/DevOpsAppContentManager/.vs/DevOpsAppContentManager/CopilotIndices/18.0.988.22099/CodeChunks.db-wal
+/DevOpsAppContentManager/.vs/DevOpsAppContentManager/CopilotIndices/18.0.988.22099/SemanticSymbols.db
+/DevOpsAppContentManager/.vs/DevOpsAppContentManager/CopilotIndices/18.0.988.22099/SemanticSymbols.db-shm
+/DevOpsAppContentManager/.vs/DevOpsAppContentManager/CopilotIndices/18.0.988.22099/SemanticSymbols.db-wal
