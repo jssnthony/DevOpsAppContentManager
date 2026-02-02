@@ -4,7 +4,7 @@
       <p class="font-200">VicHub</p>
     </div>
     <div class="center">
-      <input type="text" placeholder="Buscar..." class="search" />
+      <input type="text" placeholder="Rechercher..." class="search" />
     </div>
     <div class="right">
       Bonjour, Vic!
