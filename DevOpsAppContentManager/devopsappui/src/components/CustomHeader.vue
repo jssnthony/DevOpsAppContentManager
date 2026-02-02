@@ -7,7 +7,7 @@
       <input type="text" placeholder="Buscar..." class="search" />
     </div>
     <div class="right">
-     ased
+      Bonjour, Vic!
     </div>
   </header>
 </template>

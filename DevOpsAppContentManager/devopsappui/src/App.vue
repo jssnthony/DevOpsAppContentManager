@@ -4,6 +4,7 @@
 
 <template>
   <CustomHeader />
+  <RouterView />
 </template>
 
 <style scoped>
