@@ -10,7 +10,12 @@
              class="search"
              type="text"
              placeholder="Recherche par titre ou description…" />
+      <button class="btn primary" type="button" @click="router.push('/projects/new')">
+        + Nuevo
+      </button>
+
     </header>
+
 
     <div v-if="loading" class="state">Cargando proyectos…</div>
     <div v-else-if="error" class="state error">{{ error }}</div>
