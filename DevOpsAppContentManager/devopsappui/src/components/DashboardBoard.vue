@@ -8,33 +8,7 @@
                    :meta="card.meta"
                    :to="card.to"
                    :loading="card.loading" />
-
-    <DashboardCard v-for="card in cards"
-                   :key="card.id"
-                   :title="card.title"
-                   :description="card.description"
-                   :badge="card.badge"
-                   :meta="card.meta"
-                   :to="card.to"
-                   :loading="card.loading" />
-
-    <DashboardCard v-for="card in cards"
-                   :key="card.id"
-                   :title="card.title"
-                   :description="card.description"
-                   :badge="card.badge"
-                   :meta="card.meta"
-                   :to="card.to"
-                   :loading="card.loading" />
-
-    <DashboardCard v-for="card in cards"
-                   :key="card.id"
-                   :title="card.title"
-                   :description="card.description"
-                   :badge="card.badge"
-                   :meta="card.meta"
-                   :to="card.to"
-                   :loading="card.loading" />
+    
   </section>
 </template>
 
