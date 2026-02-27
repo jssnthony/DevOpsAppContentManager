@@ -5,7 +5,8 @@
 </template>
 
 <script setup>
-import DashboardBoard from "@/components/DashboardBoard.vue";
+  import DashboardBoard from "@/components/DashboardBoard.vue";
+
 </script>
 
 <style scoped>

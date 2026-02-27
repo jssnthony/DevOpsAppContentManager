@@ -18,7 +18,21 @@ export interface ProjectDtoToUpdate {
   repository?: string | null;
 }
 
+export type ProjectsStats = {
+  totalItems: number;
+};
+
 const API_URL = import.meta.env.VITE_API_URL;
+
+export async function getProjectsStats(): Promise<ProjectsStats> {
+  const response = await fetch(`${API_URL}/Projects/stats`, {
+    headers: { accept: "*/*" },
+  });
+
+  if (!response.ok) throw new Error("Error al obtener stats de proyectos");
+
+  return response.json() as Promise<ProjectsStats>;
+}
 
 export async function getProjects(): Promise<Project[]> {
   const response = await fetch(`${API_URL}/Projects`, {

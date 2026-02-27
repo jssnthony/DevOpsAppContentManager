@@ -16,45 +16,63 @@
 <script setup>
   import { reactive, onMounted } from "vue";
   import DashboardCard from "./DashboardCard.vue";
+  import { getProjectsStats } from "@/services/projects.services";
 
-  // tarjetas del dashboard (core modules)
   const cards = reactive([
     {
       id: "projects",
       title: "Proyectos",
       description: "Ver la lista de proyectos y entrar a cada uno.",
       badge: "Core",
-      meta: "",
+      meta: "—",
       to: "/projects",
-      loading: false,
+      loading: true,
       variant: "navy",
+      load: async () => {
+        const stats = await getProjectsStats();
+        return `${stats.totalItems} Proyectos`;
+      },
     },
     {
       id: "tasks",
       title: "Tareas",
       description: "Administrar tareas por proyecto y seguimiento del trabajo.",
       badge: "Workflow",
-      meta: "", // después aquí puedes poner "34 tareas activas"
-      to: "/tasks", // ruta futura
+      meta: "0 Tareas",
+      to: "/tasks",
       loading: false,
-      load: null,
       variant: "gold",
+      load: null,
     },
     {
       id: "cards",
       title: "Colección de Cartas",
       description: "Inventario por juego, rareza y número de copias.",
       badge: "Inventory",
-      meta: "0 cartas", // luego lo cargas del API
+      meta: "0 cartas",
       to: "/cards",
       loading: false,
       variant: "scarlet",
+      load: null,
     },
   ]);
 
   onMounted(async () => {
-    // después podemos cargar stats:
-    // ej: cards.find(c => c.id === "tasks").meta = "12 tareas";
+    // ejecuta loaders de todas las cards que tengan load
+    await Promise.all(
+      cards.map(async (c) => {
+        if (!c.load) return;
+        try {
+          c.loading = true;
+          c.meta = await c.load();
+        } catch (e) {
+          console.error(`Error loading ${c.id} stats`, e);
+          c.meta = "—";
+        } finally {
+          c.loading = false;
+        }
+      })
+    );
   });
 </script>
 

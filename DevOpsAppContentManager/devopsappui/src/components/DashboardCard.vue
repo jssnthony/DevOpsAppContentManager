@@ -80,16 +80,14 @@
     font-size: 1.05rem;
   }
 
-  .badge {
-    font-size: 0.75rem;
-    padding: 0.15rem 0.45rem;
-    border-radius: 999px;
-    border: 1px solid;
-  }
-
+  .badge,
   .pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     font-size: 0.8rem;
-    padding: 0.25rem 0.55rem;
+    line-height: 1;
+    padding: 0.28rem 0.6rem 0.14rem 0.6rem; 
     border-radius: 999px;
     white-space: nowrap;
   }
