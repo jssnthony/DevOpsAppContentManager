@@ -1,4 +1,7 @@
-import './assets/main.css'
+import '@/assets/main.css'
+import "@/assets/styles/base.css";
+import "@/assets/styles/card-variants.css";
+
 import router from "./router";
 
 import { createApp } from 'vue'

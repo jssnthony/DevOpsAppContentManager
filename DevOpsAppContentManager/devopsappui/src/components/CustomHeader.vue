@@ -1,7 +1,9 @@
 <template>
   <header :class="['header', { dark: isDarkMode }]">
     <div class="left">
-      <p class="font-200">VicHub</p>
+      <a href="/">
+        <p class="font-200">VicHub</p>
+      </a>
     </div>
     <div class="center">
       <input type="text" placeholder="Rechercher..." class="search" />
