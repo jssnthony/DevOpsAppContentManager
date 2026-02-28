@@ -17,6 +17,14 @@ const router = createRouter({
     {
       path: "/tasks",
       component: () => import("@/views/TasksView.vue"),
+    },
+    {
+      path: "/cards",
+      component: () => import("@/views/inventories/CardsView.vue"),
+    },
+    {
+      path: "/cards/new",
+      component: () => import("@/views/inventories/CardsCreateView.vue"),
     }
   ],
 });
