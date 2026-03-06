@@ -124,7 +124,7 @@
 
     // Tú luego pones tus imágenes reales
     if (game.includes("pokemon")) return "/assets/games/pokemon.png";
-    if (game.includes("yu-gi-oh")) return "/assets/games/yugioh.png";
+    if (game.includes("yugioh")) return "/assets/games/yugioh.png";
     if (game.includes("mtg") || game.includes("magic")) return "/assets/games/mtg.png";
     if (game.includes("one piece")) return "/assets/games/onepiece.png";
     return "";

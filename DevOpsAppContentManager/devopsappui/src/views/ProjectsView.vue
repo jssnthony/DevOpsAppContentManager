@@ -250,4 +250,14 @@
       justify-content: flex-start;
     }
   }
+
+  .btn {
+    padding: 0.6rem 0.9rem;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.02);
+    color: var(--text-main);
+    cursor: pointer;
+    font-weight: 700;
+  }
 </style>
