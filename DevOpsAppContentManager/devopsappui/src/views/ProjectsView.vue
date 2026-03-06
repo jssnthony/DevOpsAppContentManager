@@ -42,14 +42,14 @@
           {{ p.description || "—" }}
         </div>
 
-        <div class="cell">
+        <div class="cell repo">
           <a v-if="p.repository"
              :href="p.repository"
              target="_blank"
              rel="noreferrer"
              class="repoLink"
              @click.stop>
-            → {{p.repository}}
+            → Abrir Repositorio
           </a>
           <span v-else class="muted">—</span>
         </div>
