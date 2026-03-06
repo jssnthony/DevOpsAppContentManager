@@ -42,14 +42,14 @@
           {{ p.description || "—" }}
         </div>
 
-        <div class="cell repo">
+        <div class="cell">
           <a v-if="p.repository"
              :href="p.repository"
              target="_blank"
              rel="noreferrer"
              class="repoLink"
              @click.stop>
-            Abrir →
+            → {{p.repository}}
           </a>
           <span v-else class="muted">—</span>
         </div>
@@ -206,12 +206,6 @@
     display: -webkit-box;
     -webkit-line-clamp: 2; /* 2 líneas */
     -webkit-box-orient: vertical;
-  }
-
-  .repo {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
   }
 
   .repoLink {
