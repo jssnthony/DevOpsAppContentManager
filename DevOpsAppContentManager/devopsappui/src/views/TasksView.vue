@@ -102,7 +102,7 @@
               <td>
                 <div class="project-cell">
                   <router-link class="project-link"
-                               :to="`/projects/edit/${task.projectId}`">
+                               :to="`/projects/${task.projectId}`">
                     {{ task.projectTitle }}
                   </router-link>
                 </div>
