@@ -27,10 +27,9 @@
         <span>Repositorio</span>
       </div>
 
-      <button v-for="p in filtered"
+      <div v-for="p in filtered"
               :key="p.id"
               class="row"
-              type="button"
               @click="goToProject(p.id)"
               title="Abrir proyecto">
         <div class="cell title">
@@ -53,13 +52,14 @@
           </a>
           <span v-else class="muted">—</span>
         </div>
-      </button>
+      </div>
 
+      
       <div v-if="filtered.length === 0" class="empty">
         No hay proyectos que coincidan con tu búsqueda.
       </div>
     </div>
-  </section>
+</section>
 </template>
 
 <script setup lang="ts">
@@ -85,6 +85,10 @@
       return t.includes(q) || d.includes(q);
     });
   });
+
+  function goToCreateTask(projectId: string) {
+    router.push(`/projects/${projectId}/tasks/create`);
+  }
 
   function goToProject(id: string) {
     // listo para cuando crees /projects/:id
