@@ -13,7 +13,12 @@ export type ProjectTaskRowDto = {
   taskUpdatedAt?: string | null;
 
   projectId: string;
-  projectTitle?: string;
+  projectTitle: string;
+  projectDescription?: string | null;
+  projectRepository?: string | null;
+  projectPriority: number;
+  projectIsArchive?: boolean;
+  projectIsActive?: boolean;
 };
 
 const API_URL = import.meta.env.VITE_API_URL;
